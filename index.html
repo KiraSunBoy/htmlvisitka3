@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визитка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            box-sizing: border-box;
+        }
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(180, 17, 17, 0.1);
+            text-align: center;
+            width: 800px;
+            max-width: 100%;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-sizing: border-box;
+        }
+        .logo {
+            width: 60px;
+            margin: 0 auto 20px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .photo {
+            width: 45%;
+            height: auto;
+            max-height: 350px;
+            object-fit: contain;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .text {
+            width: 45%;
+            text-align: left;
+            background-color: #2db1e6;
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        .text h1 {
+            margin: 0 0 10px;
+            font-size: 24px;
+        }
+        .text p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #ff8800;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            text-align: center;
+            flex: 1;
+            margin: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+                align-items: center;
+            }
+            .photo, .text {
+                width: 100%;
+                max-height: none;
+                margin-bottom: 20px;
+            }
+            .text {
+                text-align: center;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .text h1 {
+                font-size: 20px;
+            }
+            .text p {
+                font-size: 14px;
+            }
+            .button {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="img/logo.png" alt="Логотип" class="logo">
+        <div class="row">
+            <img src="img/photo.jpg" alt="Фото" class="photo">
+            <div class="text">
+                <h1>Ковалева Вероника</h1>
+                <h1>Ваш личный агент по недвижимости</h1>
+                <p>Помощь в Продаже, Покупке, Аренде.</p>
+                <p>Полное сопровождение Сделки под ключ.</p>
+                <p>Гарантия юридической чистоты.</p>
+                <p>Буду рада решить Ваш вопрос.</p>
+                <p>Адрес офиса:</p>
+                <p>МО, г. Электросталь, ул. Тевосяна, д. 25, Бизнес - центр "Polar", этаж 2, офис 4, Агентство недвижимости "Лидер".</p>
+                <p>Руководитель офиса:</p>
+                <p><a href="tel:+79651381911">+79651381911</a> Оксана Сергеевна.</p>
+                
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="tel:+79777047710" class="button">Телефон</a>
+            <a href="mailto:real.estate.lider@yandex.ru" class="button">Почта</a>
+            <a href="https://wa.me/+79777047710" class="button">WhatsApp</a>
+            <a href="https://t.me/+79777047710" class="button">Telegram</a>
+        </div>
+    </div>
+</body>
+</html>
